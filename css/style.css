@@ -12,11 +12,15 @@ html{
     margin: 0;
     width: 100%;
 	height: 100%;
-    background-color: black;
+    background-color: #f5f5f5;
 }
+
+/* NAVBAR */
 
 header{
     align-items: center;
+    border-bottom: solid;
+    border-color: #00a9d4;
 }
 
 nav{
@@ -37,14 +41,17 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: white;
-    transition: 0.5s;
+    color: black;
     padding: 10px 14px;
+    font-size: 18px;
+    transition: 0.5s;
 }
 
 nav ul li a:hover{
-    color: cyan;
+    color: #00a9d4;
     transition: 0.5s;
+    border-bottom: solid;
+    padding: 12px 16px;
 }
 
 #logo{
@@ -52,6 +59,8 @@ nav ul li a:hover{
     padding: 20px;
 
 }
+
+/* FORM CONTAINER */
 
 .background{
     background-image: url(https://chiptronic.com.br/blog/wp-content/uploads/2019/09/equipamentos-para-oficina.jpg);
@@ -96,9 +105,9 @@ nav ul li a:hover{
 }
 
 .reg{
-    color: white;
+    color: #00a9d4;
     align-items: center;
-    background-color: black;
+    background-color: #f5f5f5;
     border-radius: 8px;
     border-width: 1px;
     border-color: black;
@@ -122,6 +131,7 @@ label{
     padding-bottom: 15px;
     padding-top: 10px;
     font-size: 16px;
+    font-weight: bolder;
 }
 
 form input[type=text], form input[type=email], form input[type=tel]{
@@ -129,9 +139,9 @@ form input[type=text], form input[type=email], form input[type=tel]{
     margin-top: 23px;
     font-size: 25px;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     background: transparent;
-    color: white;
+    color: black;
     outline: none;
 }
 
@@ -148,24 +158,26 @@ form input[type=text], form input[type=email], form input[type=tel]{
     padding: 12px;
     line-height: 24px;
     color: white;
-    background-color: red;
+    background-color: #00a9d4;
     font-size: 18px;
 }
+
+/* SECTIONS */
 
 .sec1{
     margin: 0px auto;
     max-width: 1023px;
     padding-right: 24px;
     padding-left: 24px;
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     display: flex;
     flex-direction: column;
 }
 
 .div1{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 56px;
 }
 
@@ -174,7 +186,7 @@ form input[type=text], form input[type=email], form input[type=tel]{
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
-    color: white;
+    color: black;
 }
 
 .divtxt1 h2{
@@ -184,7 +196,173 @@ form input[type=text], form input[type=email], form input[type=tel]{
 }
 
 .divtxt1 h3{
-    font-size: 38px;
+    font-size: 24px;
     margin: 0;
     margin-top: 24px;
+    line-height: 42px;
+}
+
+span{
+    color: #00a9d4;
+}
+
+.div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 26px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.sec2{
+    background-image: url(https://www.gov.br/cetem/pt-br/central-de-conteudos/imagens/fundo-abstrato-azul-01_1150x500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: solid;
+    border-top: solid;
+    color: #f5f5f5;
+}
+
+.sec2 h1{
+    line-height: 32px;
+    padding-top: 40px;
+}
+
+.sec2 h1,.sec2 h2,.sec2 h3{
+    text-align: center;
+}
+
+.sec2 h2{
+    font-size: 28px;
+    color: white;
+    padding-top: 40px;
+}
+
+.sec2 h3{
+    font-size: 20px;
+}
+
+.sec2vtg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img2{
+    border: solid;
+    border-radius: 50%;
+    font-size: 60px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: #00a9d4;
+    border-color: transparent;
+    padding-bottom: 30px;
+}
+
+.sec3{
+    margin: 0px auto;
+    max-width: 1023px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div3{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 56px;
+}
+
+.divtxt3{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: black;
+}
+
+.divtxt3 h2{
+    font-size: 56px;
+    line-height: 72px;
+    margin: 0;
+}
+
+.divtxt3 h3{
+    font-size: 24px;
+    margin: 0;
+    margin-top: 24px;
+    line-height: 42px;
+}
+
+/* FOOTER */
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#00a9d4;
+    color:black;
+}
+  
+.footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+}
+  
+.footer-basic li {
+    padding:0 10px;
+}
+  
+.footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+}
+  
+.footer-basic ul a:hover {
+    opacity:1;
+}
+  
+.footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+}
+  
+.footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid black;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+  
+.footer-basic .social > a:hover {
+    opacity:1;
+}
+  
+.footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:black;
+    margin-bottom:0;
+}
+
+.footer-basic .copyright{
+    font-size: 16px;
 }
