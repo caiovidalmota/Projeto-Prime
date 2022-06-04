@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+::selection {
+    color: black;
+    background: #00a9d4;
+  }
 
 html{
     scroll-behavior: smooth;
@@ -56,8 +61,8 @@ nav ul li a:hover{
 
 #logo{
     position: absolute;
-    padding: 20px;
-
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 /* FORM CONTAINER */
@@ -75,14 +80,14 @@ nav ul li a:hover{
     padding-right: 24px;
     padding-top: 56px;
     padding-bottom: 56px;
-    display:flex;
+    display: flex;
     max-width: 1023px;
 }
 
 .regcontainer{
     padding: 32px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 56px;
     min-height: 660px;
 }
@@ -96,12 +101,10 @@ nav ul li a:hover{
 .reginfo h1{
     font-size: 64px;
     margin: 0;
-}
-
-.reginfo h2{
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 36px;
+    line-height: 80px;
+    background-color: #00a9d4;
+    border-radius: 16px;
+    padding: 24px;
 }
 
 .reg{
@@ -115,7 +118,7 @@ nav ul li a:hover{
     padding: 24px;
 }
 
-form{
+.formreg{
     display: grid;
     gap: 24px;
     padding-top: 30px;
@@ -304,65 +307,145 @@ span{
 /* FOOTER */
 
 .footer-basic {
-    padding:40px 0;
-    background-color:#00a9d4;
-    color:black;
+    padding: 40px 0;
+    background-color: #00a9d4;
+    color: black;
 }
   
 .footer-basic ul {
-    padding:0;
-    list-style:none;
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-    margin-bottom:0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
   
 .footer-basic li {
-    padding:0 10px;
+    padding: 0 10px;
 }
   
 .footer-basic ul a {
-    color:inherit;
-    text-decoration:none;
-    opacity:0.8;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
 }
   
 .footer-basic ul a:hover {
-    opacity:1;
+    opacity: 1;
 }
   
 .footer-basic .social {
-    text-align:center;
-    padding-bottom:25px;
+    text-align: center;
+    padding-bottom: 25px;
 }
   
 .footer-basic .social > a {
-    font-size:24px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    border:1px solid black;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
 }
   
 .footer-basic .social > a:hover {
-    opacity:1;
+    opacity: 1;
 }
   
 .footer-basic .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:13px;
-    color:black;
-    margin-bottom:0;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 0;
 }
 
 .footer-basic .copyright{
     font-size: 16px;
+}
+
+/* Btn chat */
+.open-button {
+    background-color: #00a9d4;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    border: solid 2px black;
+    transition: 0.5s;
+    border-radius: 60px;
+  }
+  
+.chat-popup {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    height: 0;
+    right: 23px;
+    z-index: 9;
+    transition: 1s;
+    border-radius: 12px;
+  }
+  
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: #00a9d4;
+    display: grid;
+    border-radius: 12px;
+  }
+  
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    border-radius: 15px;
+    border: solid black 2px;
+  }
+  
+.form-container textarea:focus {
+    transition: background-color 0.3s;
+    outline: none;
+  }
+  
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border: solid black 2px;
+  }
+  
+.form-container .cancel {
+    background-color: red;
+  }
+  
+.open-button:hover {
+    opacity: 1;
+    transition: 0.5s;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+  }
+
+.form-container button:hover{
+    color: black;
 }
